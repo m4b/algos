@@ -11,8 +11,9 @@ algos
  in bitter anguish for a long time and with great grief at heart.
  Hesiod, Theogony, 620
 
+=====
 
-Algebraic arithmetization of boolean algebra and its implementation.
+Algebraic arithmetization of boolean algebra and its OCaml implementation.
 
 To compile:
 
