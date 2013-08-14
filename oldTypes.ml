@@ -1,3 +1,19 @@
+(* WARNING:
+
+   A good majority of this code (the mult function) was used from a first incarnation of the algos solver, and is not:
+
+   a. production code
+   b. nice to look at
+   c. something I am proud of
+
+   Please keep this in mind if for some reason you are examining it.  The mult function _needs_ to be refactored to be readable in any sense of that word --- and without a doubt can be significantly shrunk in size.
+
+   It is only included here because it works, albeit inefficiently.
+   
+   You have been forewarned!
+
+*)
+
 open AlgosTypes
 
 type algos = Un | Ni | Terminal of string | Expr of algos list | Anti of algos list | Times of algos list;;
