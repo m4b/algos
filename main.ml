@@ -150,7 +150,7 @@ let rec parse () =
        end
      with
      | Parsing.Parse_error       -> print_string ("$P" ^ line ^ "\n")
-(*     | _                         -> print_string ("$S " ^ line ^ "\n") *)
+     | _                         -> print_string ("Error: cannot parse \"" ^ line ^ "\"\n")
 );
     flush stdout;
     parse ();
