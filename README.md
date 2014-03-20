@@ -17,7 +17,7 @@ Algebraic arithmetization of boolean algebra and its OCaml implementation.
 
 To compile:
 
-ocamlbuild -use-menhir main.native
+ocamlbuild main.native
 
 ----
 

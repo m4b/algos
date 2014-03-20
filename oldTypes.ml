@@ -896,7 +896,7 @@ let rec muld (x) =
 
 	      | [Times(j2)] ->
 
-		if List.for_all islit z & List.for_all islit j2 & sortlit z = sortlit j2 then
+		if List.for_all islit z && List.for_all islit j2 && sortlit z = sortlit j2 then
 		  (				  
 		    Anti[Times(sortlit(j2))]::muld(tail)
 		  )
