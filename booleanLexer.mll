@@ -8,8 +8,8 @@ rule lex = parse
   | "⊤"|'1'|'T'     { TOP }
   | "⊥"|'0'|'F'     { BOT }
   | "¬"|'~'         { NEGATION }
-  | "∧"|"/\\"       { CONJUNCTION }
-  | "∨"|"\\/"       { DISJUNCTION }
+  | "∧"|"/\\" | '&' { CONJUNCTION }
+  | "∨"|"\\/" | '|' { DISJUNCTION }
   | "→"|"⇒"|"->"    { IMPLICATION }
   | "↔"|"⇔"|"<->"   { BICONDITIONAL }
   | eof             { EOF }
